@@ -32,3 +32,20 @@ According to the equation above, two qubits can have the state vector like,
 
 $|\psi> = a_{00}|00> + a_{01}|01> + a_{10}|10> + a_{11}|11>$
 
+### Measuring subsets
+
+For the system of two qubits, the subset of it should be a system has only one qubit. For this system, we can measure just one subset of it.
+
+Giving 0 with probability $|a_{00}|^2 + |a_{01}|^2$, and leaving the **post-measurements**,
+
+<!-- TODO: Understand the normalization stuff. -->
+
+$|\psi'> = \frac{a_{00}|00> + a_{01}|01>}{\sqrt{|a_{00}|^2 + |a_{01}|^2}}$.
+
+An important two qubits state is the *Bell state* or *EPR pair*,
+
+$\frac{|00> + |11>}{\sqrt{2}}$.
+
+### Measuring $n$ qubits
+
+Compute the basis states of the system are of the form $|x_{1}x_{2}...x_{n}>$, and a quantum state for such a system is specified by $2^n$ amplitudes.
