@@ -68,3 +68,19 @@ U_{CN}=\begin{bmatrix}
 0 & 0 & 1 & 0 \\
 \end{bmatrix}
 $
+
+## Quantum Algorithms
+
+> Reference: section 1.4, *Quantum Computation and Quantum Information*.
+
+Like the classical computers, quantum computers should have their own set of algorithms. These algorithms should adapt to the preferences of quantum computers.
+
+### Classical computations on quantum computers
+
+To stimulate classical computations on quantum computer, one thing we need is [*Toffoli gates*](https://en.wikipedia.org/wiki/Toffoli_gate). A Toffoli gate can stimulate gates in classical computers. Since it can provide **deterministic** computation results.
+
+Quantum computers can also stimulate *non-deterministic* classic computers.
+
+### Quantum parallelism
+
+*Quantum parallelism* is a fundamental feature for many quantum algorithms.
