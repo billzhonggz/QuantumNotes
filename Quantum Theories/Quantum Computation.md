@@ -84,3 +84,17 @@ Quantum computers can also stimulate *non-deterministic* classic computers.
 ### Quantum parallelism
 
 *Quantum parallelism* is a fundamental feature for many quantum algorithms.
+
+[*Hadamard Transform*](https://en.wikipedia.org/wiki/Hadamard_transform) is a typical example for quantum parallelism.
+
+In this operation, multiple Hadamard gates work in parallel on $n$ qubits. For example, if $n = 2$, with qubits initially prepared as $|0>$, which gives the following as the output.
+
+$(\frac{|0> + |1>}{\sqrt{2}})(\frac{|0> + |1>}{\sqrt{2}}) = \frac{|00> + |01> + |10> + |11>}{2}$
+
+In general, the Hadamard transform in $n$ qubits give the output like
+
+$\frac{1}{\sqrt{2^n}}\sum_{x}|x>$
+
+We can say that, *quantum parallelism* enable us to evaluate all the possible values of a computation $f(x)$ simultaneously.
+
+**Quantum computations require more than quantum parallelism to be useful, they *extract* information in parallel about more than one value of a given computation $f(x)$ from superpositions like $\sum_{x}|x, f(x)>$.**
