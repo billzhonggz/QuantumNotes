@@ -98,3 +98,7 @@ $\frac{1}{\sqrt{2^n}}\sum_{x}|x>$
 We can say that, *quantum parallelism* enable us to evaluate all the possible values of a computation $f(x)$ simultaneously.
 
 **Quantum computations require more than quantum parallelism to be useful, they *extract* information in parallel about more than one value of a given computation $f(x)$ from superpositions like $\sum_{x}|x, f(x)>$.**
+
+### Deutsch-Jozsa algorithm
+
+> See also: <https://en.wikipedia.org/wiki/Deutsch%E2%80%93Jozsa_algorithm>
