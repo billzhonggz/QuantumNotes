@@ -39,3 +39,31 @@ Introduced in 1990 by Biham and Shamir, *differential cryptanalysis* is a method
 We assume the attacker has the freedom of choosing data blocks to encrypt and of acquiring many plaintext-ciphertext pair $\{P_i, C_i = F_k(P_i)\}$. From these information, the attacker will try to find out the key $K$.
 
 In contrast to perfect secrecy, we say that a cipher is *computationally secure* if its security relies on the computational difficulty to break it.
+
+## Secret-Key Authentication
+
+> See also: <https://en.wikipedia.org/wiki/Key_authentication>
+
+Key authentication is used to defend *man-in-the-middle* attack.
+
+To achieve this, `Alice` and `Bob` can add a *message authentication code* (MAC) to the original information.
+
+Example: Authentication using block cipher
+
+## Public-Key Cryptography
+
+> See also: <https://en.wikipedia.org/wiki/Public-key_cryptography>
+
+### RSA
+
+> See also: <https://en.wikipedia.org/wiki/RSA_(cryptosystem)>
+
+RSA provides a computational-security method to encrypt information, as well as a signature method.
+
+### Diffie-Hellman Key Agreement
+
+> See also: <https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange>
+
+The Diffie-Hellman Key Agreement protocol provides each pair of users with a common secret key by way of public-key techniques. As for RSA, each user has a private and a public key, and the result of the key agreement is a secret key, **unique** to a given pair of users.
+
+This agreement can be used for confidentially or authentication purposes using secret-key techniques.
