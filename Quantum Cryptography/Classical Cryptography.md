@@ -30,10 +30,12 @@ Examples: WEP, RC4.
 
 Examples: DES, AES
 
-## Differential Cryptanalysis
+## Cryptanalysis
 
 > See also: <https://en.wikipedia.org/wiki/Differential_cryptanalysis>
 
-Introduced in 1990 by Biham and Shamir, *differential cryptanalysis* is a method to analysis crypto methods.
+Introduced in 1990 by Biham and Shamir, *differential cryptanalysis* is a method to analysis (attack) crypto methods, especially in methods using block cipher.
 
 We assume the attacker has the freedom of choosing data blocks to encrypt and of acquiring many plaintext-ciphertext pair $\{P_i, C_i = F_k(P_i)\}$. From these information, the attacker will try to find out the key $K$.
+
+In contrast to perfect secrecy, we say that a cipher is *computationally secure* if its security relies on the computational difficulty to break it.
