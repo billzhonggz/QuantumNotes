@@ -23,3 +23,7 @@ For a particular encoding method, the entropy of a random variable tells us prec
 ### Properties of source codes
 
 > See also: <https://en.wikipedia.org/wiki/Shannon%27s_source_coding_theorem>
+
+<!-- TODO: Get more materials to understand the source coding theorem. -->
+
+The source coding theorem establishes a limit of data compression.
