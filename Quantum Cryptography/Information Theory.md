@@ -49,3 +49,23 @@ Huffman codes are an example of prefix-free codes. See <https://en.wikipedia.org
 ### Arithmetic coding
 
 Arithmetic coding is an alternative of Huffman coding. See <https://en.wikipedia.org/wiki/Arithmetic_coding> for details.
+
+## Channel Coding
+
+> See also: <https://en.wikipedia.org/wiki/Coding_theory#Channel_coding>
+
+*Channel coding* is the most important question addressed by information theory. It consists in finding the most efficient way to transmit information over a potentially noisy channel.
+
+A channel is characterized by an input alphabet $\mathcal{X}$, the symbols that the **sender** can transmit, and an output alphabet $\mathcal{Y}$, the symbols that the **receiver** gets.
+
+If we do not consider other condition, we can model the channel by a probability transition matrix $p(y|x)$, which expresses the *probability of observing the output symbol $y$ given that the input symbol $x$*. This matrix already considers all of the events may happen during channel transmission.
+
+Measuring quality of channel transmission: *mutual information* between two random variables. The mutual information between $X$ and $Y$ is written as $I(X;Y)$ and denoted as
+
+$I(X;Y) = H(X) + H(Y) - H(X,Y) = I(Y;X)$.
+
+It satisfies $I(X;Y) \geq 0$ with equality $X$ and $Y$ are independent.
+
+**The fundamental upper bound on the rate of transmission is $I(X;Y)$ bits per channel use.** The maximization defines as *channel capacity* on the input distribution $P_X(x)$,
+
+$C = \max_{P_X(x)} I(X;Y)$.
