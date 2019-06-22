@@ -1,6 +1,7 @@
 # Information Theory
 
 > Reference: section 3, *Quantum Cryptography and Secret-Key Distillation*
+> See also: <https://en.wikipedia.org/wiki/Information_theory>
 
 ## Source Coding
 
@@ -117,3 +118,15 @@ For a random variable $U$ with uniform distribution, the order-2 Rényi and Shan
 The joint Rényi entropy of multiple random variables is calculated over their joint probability distribution, and satisfy $H_r(X,Y) \leq H_r(X) + H_r(Y)$.
 
 The conditional Rényi entropy can be defined as $H_r(X|Y) = \sum_{y \in \mathcal{y}}P_Y(y)H_r(X|Y = y)$.
+
+## Continuous Variables
+
+In this section, we will treat on continuous variables rather than discrete variables.
+
+### Differential entropy
+
+> See also: <https://en.wikipedia.org/wiki/Differential_entropy>
+
+The *differential entropy* of a continuous random variable $X$ is defined as,
+
+$H(X) = - \int_x dxp_X(x) \log p_X(x)$.
