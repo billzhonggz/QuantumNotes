@@ -2,7 +2,7 @@
 
 > Reference: section 3, *Quantum Cryptography and Secret-Key Distillation*
 
-## Source Coding (Encoding)
+## Source Coding
 
 ### Shannon Entropy
 
