@@ -41,3 +41,11 @@ We say that a code is *uniquely decodable* if for all strings $\bar{a} \in \math
 The binary string $s_1$ is said to be a *prefix* of $s_2$ if the $|s_1|$ first bits of $s_2$ are equal to those of $s_1$. And if $s1 \not ={s_2}$, we say $s1$ is a *proper prefix* of $s_2$.
 
 A code is said to be *instantaneous* or *prefix-free* if no codeword is a prefix of another codeword.
+
+### Huffman coding
+
+Huffman codes are an example of prefix-free codes. See <https://en.wikipedia.org/wiki/Huffman_coding> for details.
+
+### Arithmetic coding
+
+Arithmetic coding is an alternative of Huffman coding. See <https://en.wikipedia.org/wiki/Arithmetic_coding> for details.
