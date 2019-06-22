@@ -69,3 +69,51 @@ It satisfies $I(X;Y) \geq 0$ with equality $X$ and $Y$ are independent.
 **The fundamental upper bound on the rate of transmission is $I(X;Y)$ bits per channel use.** The maximization defines as *channel capacity* on the input distribution $P_X(x)$,
 
 $C = \max_{P_X(x)} I(X;Y)$.
+
+### Error-correcting codes
+
+> See also: <https://en.wikipedia.org/wiki/Error_correction_code>
+
+Error-correcting codes are methods to encode information in such a way that they are made resistant against errors caused by the channel over which they are transmitted.
+
+There are well-know error-correcting codes call *linear codes*.
+
+### Markov chains
+
+> See also: <https://en.wikipedia.org/wiki/Markov_chain>
+
+The three random variables $X \rightarrow Y \rightarrow Z$ are said to form a *Markov chain* (in that order) if the joint probability distribution can be written as $P_{XYZ}(x,y,z) = P_X(x)P_{Y|X}(y|x)P_{Z|Y}(z|y)$.
+
+## Rényi Entropies
+
+<!-- TODO: Research on more materials in its explanations and applications.  -->
+
+> See also: <https://en.wikipedia.org/wiki/R%C3%A9nyi_entropy>
+
+The Rényi entropies form a family of functions on the probability distributions, which generalize (and include) the Shannon entropy.
+
+The *Rényi entropy* of order $r$, with $0 < r < \infty$ and $r \not ={1}$, of $X$ is defined as,
+
+$H_r(X) = \frac{1}{1-r} \log \sum_x (P_X(x))^r$.
+
+For $r = 0, 1, \infty$, we conventionally define,
+
+$H_0(X) = \log |\{x \in \mathcal{X}: P_X(x) > 0\}|$,
+
+the logarithm of support size of $X$;
+
+$H_1(X) = H(X)$,
+
+the regular Shannon entropy; and
+
+$H_\infty(X) = -\log \max_x P_X(x)$, the negative logarithm of the largest symbol probability.
+
+An important particular case is the order-2 Rényi entropy $H_2(X) = -\log \sum P_X^2(x)$, which is in fact the negative logarithm of the *collision probability*.
+
+> The *collision probability* $\sum P_X^2(x)$ is the probability that two independent realizations of the random variable $X$ are equal.
+
+For a random variable $U$ with uniform distribution, the order-2 Rényi and Shannon entropies match. For any other random variable, the order-2 Rényi entropy is smaller than its Shannon entropy.
+
+The joint Rényi entropy of multiple random variables is calculated over their joint probability distribution, and satisfy $H_r(X,Y) \leq H_r(X) + H_r(Y)$.
+
+The conditional Rényi entropy can be defined as $H_r(X|Y) = \sum_{y \in \mathcal{y}}P_Y(y)H_r(X|Y = y)$.
