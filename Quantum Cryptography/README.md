@@ -6,3 +6,4 @@ Currently includes,
 
 - Basic knowledge of classical cryptography.
 - Information Theory
+- Quantum Information Theory (more at [here](../Quantum%20Theories))
