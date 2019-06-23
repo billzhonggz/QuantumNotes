@@ -5,9 +5,15 @@ Notes on quantum-related topics.
 Most of the notes come from these books.
 
 - Michael A. Nielsen and Isaac L. Chuang, **Quantum Computation and Quantum Information**, Cambridge University Press, 2015
-- Gilles Van Assche, **Quantum Cryptography and Secret-Key Distillation**, Cambridge University Press, 2016
+- Gilles Van Assche, **Quantum Cryptography and Secret-Key Distillation**, Cambridge University Press, 2006
 
 I will put the references on each file (remind me if forgot).
+
+## LaTeX Expressions
+
+The notes were written in Markdown format with [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/) plugin on [Visual Studio Code](https://code.visualstudio.com/). All of the LaTeX expressions in the notes can be rendered by [KaTeX](https://katex.org/) included in Markdown Preview Enhanced plugin.
+
+Since GitHub does not provide LaTeX rendering, I will provide PDF version along with the Markdown files for notes with many LaTeX expressions.
 
 ## License
 
