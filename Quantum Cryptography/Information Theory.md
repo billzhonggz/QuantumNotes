@@ -130,3 +130,33 @@ In this section, we will treat on continuous variables rather than discrete vari
 The *differential entropy* of a continuous random variable $X$ is defined as,
 
 $H(X) = - \int_x dxp_X(x) \log p_X(x)$.
+
+The fundamental difference between differential entropy and Shannon entropy: The differential entropy is sensitive to an invertible transformation of the symbols, while the Shannon entropy is not. So, in differential entropy, $H(X) < 0$ can happen.
+
+The *conditional differential entropy* is usually defined as $H(X|Y) = H(X,Y) - H(Y)$ for continuous random variable $X$ and $Y$.
+
+The mutual information is $I(X;Y) = H(X) + H(Y) - H(X,Y)$, and $I(X;Y) \geq 0$.
+
+### Gaussian variables and Gaussian channel
+
+> See also: <https://en.wikipedia.org/wiki/Differential_entropy#Maximization_in_the_normal_distribution>
+
+Let $X \sim \mathcal{N}(\mu, \sigma^2)$ be a Gaussian variable, with the mean $\mu$ and standard deviation $\Sigma$, i.e.
+
+$p_X(x) = \frac{1}{\Sigma \sqrt{2\pi}}e^{-\frac{(x-y)^2}{2\Sigma^2}}$
+
+The differential entropy of $X$ is $H(X) = 2^{-1} \log(2 \pi e \Sigma ^2)$.
+
+Let $X$ be transmitted through a *Gaussian channel*, then we can get,
+
+> Gaussian channel: a channel which adds a Gaussian noise $\epsilon \sim \mathcal{N}(0, \sigma)$ of standard deviation $\sigma$ on the signal, giving $Y = X + \epsilon$ as the output.
+
+- The entropy of output $Y$ on input $X$ is distributed as a Gaussian with standard deviation $\sigma$.
+- The entropy of $Y$ is conditional on $X$, $H(Y|X)=2^{-1} \log(2 \pi e \sigma^2)$ bits.
+- The distribution of $Y$ is Gaussian with variance $\Sigma^2 + \sigma^2$, then $H(Y) = 2^{-1} \log(2 \pi e (\Sigma^2 + \sigma^2))$ bits.
+- The mutual information on this transmission is $I(X;Y) = H(Y) - H(Y|X) = \frac{1}{2} \log (1 + \frac{\Sigma^2}{\sigma^2})$.
+- $\frac{\Sigma^2}{\sigma^2}$ is called the *signal-to-noise ratio* (snr).
+
+By theory, a Gaussian channel can transmit an arbitrarily high number of bits if the input distribution has a sufficiently high standard deviation $\Sigma$.
+
+Gaussian distribution yields the *best* rate for a given variance. The capacity of a Gaussian channel can be written as $\Sigma = \Sigma_{\max}$.
