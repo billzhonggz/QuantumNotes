@@ -160,3 +160,14 @@ Let $X$ be transmitted through a *Gaussian channel*, then we can get,
 By theory, a Gaussian channel can transmit an arbitrarily high number of bits if the input distribution has a sufficiently high standard deviation $\Sigma$.
 
 Gaussian distribution yields the *best* rate for a given variance. The capacity of a Gaussian channel can be written as $\Sigma = \Sigma_{\max}$.
+
+## Perfect Secrecy (Revised)
+
+Introducing the concepts of entropy, we can say that, for a perfect secrecy, $H(P|C) = H(P)$ where $P \in \mathcal{P}$, $C \in \mathcal{C}$, and $\mathcal{P}, \mathcal{C}$ standard for plaintext and ciphertext respectively.
+
+For a perfect secrecy,
+
+- No bit can be transmitted through this "channel". That is, perfect secrecy $\Leftrightarrow I(P;C) = 0$.
+- Perfect secrecy requires at least as many key bits as the message. That is, perfect secrecy $\Leftrightarrow H(K) \geq H(P)$, with $K$ is the random variable modelling the key and $K$ cannot be reused.
+
+If the "middle man" has a non-zero knowledge on the key we used, let random variable $Z$ models the knowledge to $K$ of the "middle-man", and $H(K) = l$ where the plaintext and the ciphertext has $l$ blocks of bits, then $I(K;Z) = \epsilon$. Consequentially, $H(P|C,Z) = H(P) - \epsilon$.
