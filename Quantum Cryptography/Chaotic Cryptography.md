@@ -42,3 +42,17 @@ In a CSK system,
 - The *decoder* has the same number of chaotic systems. They work in in pairs with chaotic systems in the encoder side.
 - By *adjusting their parameter values*, only *one* pair of the system can be synchronized at a time.
 - Then the *decoder* can recover the encrypted information.
+
+### Chaotic Modulation (CMod)
+
+*CMod* system deal with *continuous* information signal.
+
+In a CMod system,
+
+- The *encoder* consists of *one* non-autonomous chaotic system, and its state is fluctuated and affected by the source information signal.
+- The *decoder* reconstructs the states of encoder through synchronization.
+- By applying inverse encoder operation to reconstruct the *state* and the received signals.
+
+## Example: Baptist Encryption Technique (BET)
+
+*To be continued...*
